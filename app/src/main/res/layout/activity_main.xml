@@ -11,8 +11,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="83dp"
-        android:layout_marginTop="39dp"
+        android:layout_marginStart="83sp"
+        android:layout_marginTop="39sp"
         android:text="Login to your Illinois account" />
 
     <TextView
@@ -21,8 +21,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginStart="68sp"
+        android:layout_marginTop="300sp"
         android:text="Or Choose a Dining Hall as a Guest!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,8 +35,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="68dp"
-        android:layout_marginBottom="322dp"
+        android:layout_marginStart="68sp"
+        android:layout_marginBottom="322sp"
         android:text="ISR" />
 
     <Button
@@ -45,8 +45,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="110dp"
-        android:layout_marginBottom="322dp"
+        android:layout_marginEnd="110sp"
+        android:layout_marginBottom="322sp"
         android:text="Allen" />
 
     <Button
@@ -55,8 +55,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="252dp"
-        android:layout_marginBottom="210dp"
+        android:layout_marginEnd="252sp"
+        android:layout_marginBottom="210sp"
         android:text="PAR" />
 
     <Button
@@ -65,8 +65,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="110dp"
-        android:layout_marginBottom="210dp"
+        android:layout_marginEnd="110sp"
+        android:layout_marginBottom="210sp"
         android:text="Ike" />
 
     <ImageView
@@ -76,7 +76,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="91dp"
-        android:layout_marginTop="73dp"
+        android:layout_marginStart="91sp"
+        android:layout_marginTop="73sp"
         app:srcCompat="@drawable/illinois_block_i" />
 </RelativeLayout>
