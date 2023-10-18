@@ -14,7 +14,20 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        android:layout_marginStart="170dp"
-        android:layout_marginTop="365dp"
-        android:text="Thank You!" />
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="245dp"
+        android:text="Thank You!"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/homeBack"
+        android:layout_width="266dp"
+        android:layout_height="164dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="353dp"
+        android:layout_marginEnd="68dp"
+        android:text="Back to Homepage"
+        android:textSize="30dp" />
 </RelativeLayout>

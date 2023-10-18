@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">ISR App 2</string>
+    <string-array name="stations">
+        <item>Fusion 48</item>
+        <item>Sapporito</item>
+        <item>Grillworks</item>
+        <item>Latitude</item>
+        <item>Inclusive Solutions Kitchen</item>
+        <item>Grains and Greens Salad Bar</item>
+        <item>Rise and Dine</item>
+        <item>Cafe a la Crumb</item>
+    </string-array>
 </resources>

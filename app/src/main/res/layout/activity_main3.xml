@@ -6,21 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity3">
 
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="417dp"
+        android:text="Is there anything else that you would like to mention?"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="117dp" />
+
     <RatingBar
         android:id="@+id/ratingBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="326dp"
-        android:layout_marginEnd="85dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="342dp"
+        android:layout_marginEnd="84dp"
+        android:clickable="true"
+        android:focusable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.684"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="384dp"
-        android:clickable="true"
-        android:focusable="true" />
+        tools:layout_editor_absoluteY="384dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -28,57 +41,48 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="301dp"
+        android:layout_marginTop="291dp"
         android:text="How would you rate the quality of food?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="117dp" />
-
-    <SeekBar
-        android:id="@+id/seekBar3"
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
-        android:layout_width="309dp"
-        android:layout_height="56dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="66dp"
-        android:layout_marginTop="223dp"
-        android:max="10"
-        android:progress="2"/>
+        tools:layout_editor_absoluteX="117dp"
+        android:textSize="18dp"/>
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="33dp"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="83dp"
-        android:layout_marginTop="199dp"
-        android:text="How long would you say the wait time was?" />
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="177dp"
+        android:text="How long would you say the wait time was?"
+        android:textSize="18dp" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="286dp"
-        android:layout_height="42dp"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="100dp"
-        android:text="Which station did you take food from?" />
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="53dp"
+        android:text="Which station did you take food from?"
+        android:textSize="18dp" />
 
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="301dp"
-        android:layout_height="68dp"
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginStart="71dp"
-        android:layout_marginTop="124dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Station" />
+        android:layout_marginBottom="593dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown" />
 
     <Button
         android:id="@+id/submitButton"
@@ -86,7 +90,42 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="241dp"
+        android:layout_marginBottom="49dp"
         android:text="Submit" />
+
+    <SeekBar
+        android:id="@+id/waitBar"
+        android:layout_width="337dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="213dp" />
+
+    <TextView
+        android:id="@+id/waitTime"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="257dp"
+        android:text="0 minutes"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="317dp"
+        android:layout_height="96dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginBottom="167dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
 
 </RelativeLayout>
