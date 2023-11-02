@@ -10,8 +10,8 @@
         android:id="@+id/textView6"
         android:layout_width="@dimen/_250sdp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="435dp"
+        android:layout_marginStart="@dimen/_330sdp"
+        android:layout_marginTop="@dimen/_20sdp"
         android:text="Is there anything else that you would like to mention?"
         android:textSize="@dimen/_18sdp" />
 
@@ -19,8 +19,8 @@
         android:id="@+id/stationRating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/_260sdp"
+        android:layout_marginStart="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_230sdp"
         android:clickable="true"
         android:focusable="true" />
 
@@ -29,8 +29,8 @@
         android:layout_width="@dimen/_250sdp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/_200sdp"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_170sdp"
         android:text="How would you rate the quality of food?"
         android:textSize="@dimen/_18sdp"/>
 
@@ -38,18 +38,18 @@
         android:id="@+id/textView3"
         android:layout_width="@dimen/_250sdp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_20sdp"
         android:text="How long would you say the wait time was?"
         android:textSize="@dimen/_18sdp" />
 
 
     <Button
         android:id="@+id/submitButton"
-        android:layout_width="168dp"
-        android:layout_height="86dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/_500sdp"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginStart="@dimen/_370sdp"
+        android:layout_marginTop="@dimen/_200sdp"
         android:text="Submit"
         android:textSize="@dimen/_20sdp"/>
 
@@ -57,15 +57,15 @@
         android:id="@+id/waitBar"
         android:layout_width="@dimen/_250sdp"
         android:layout_height="@dimen/_30sdp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/_110sdp" />
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_80sdp" />
 
     <TextView
         android:id="@+id/waitTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/_135sdp"
+        android:layout_marginStart="@dimen/_115sdp"
+        android:layout_marginTop="@dimen/_105sdp"
         android:text="0 Minutes"
         android:textSize="@dimen/_14sdp" />
 
@@ -73,8 +73,8 @@
         android:id="@+id/messageReview"
         android:layout_width="317dp"
         android:layout_height="96dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/_375sdp"
+        android:layout_marginStart="@dimen/_330sdp"
+        android:layout_marginTop="@dimen/_80sdp"
         android:ems="10"
         android:gravity="start|bottom"
         android:inputType="textMultiLine" />
