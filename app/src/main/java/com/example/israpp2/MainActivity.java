@@ -71,14 +71,30 @@ public class MainActivity extends AppCompatActivity {
         });
 
         if (auth.getCurrentUser() != null) {
-            Intent intent = new Intent(MainActivity.this, MainActivity5.class);
-            startActivity(intent);
-            //TextView signInStatus = findViewById(R.id.status_textview);
-            //signInStatus.setText("Signed in");
-            finish();
+            //Intent intent = new Intent(MainActivity.this, MainActivity3.class);
+            //startActivity(intent);
+            TextView signInStatus = findViewById(R.id.status_textview);
+            signInStatus.setText("Signed in");
+            //finish();
 
         }
 
+        Button signOutButton = findViewById(R.id.signOutButton);
+        signOutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                signOut();
+            }
+        });
+
+
+    }
+
+    private void signOut() {
+        FirebaseAuth.getInstance().signOut();
+        mGoogleSignInClient.signOut();
+        TextView signInStatus = findViewById(R.id.status_textview);
+        signInStatus.setText("Signed out");
 
     }
 
@@ -121,11 +137,11 @@ public class MainActivity extends AppCompatActivity {
 
                             database.getReference().child("users").child(user.getUid()).setValue(map);
 
-                            //TextView signInStatus = findViewById(R.id.status_textview);
-                            //signInStatus.setText("Signed in");
+                            TextView signInStatus = findViewById(R.id.status_textview);
+                            signInStatus.setText("Signed in");
 
-                            Intent intent = new Intent(MainActivity.this, MainActivity.class);
-                            startActivity(intent);
+                            //Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                            //startActivity(intent);
 
                         }
                         else {
