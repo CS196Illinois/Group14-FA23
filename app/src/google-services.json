@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "466847416418",
+    "project_id": "times2eat-520c6",
+    "storage_bucket": "times2eat-520c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466847416418:android:1d68139386ed468f44113b",
+        "android_client_info": {
+          "package_name": "com.example.israpp2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466847416418-8k44bflt93p1t8enavivm60otv864149.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.israpp2",
+            "certificate_hash": "ad9da3ab94b2ab3141f24518855b55eae13dbd06"
+          }
+        },
+        {
+          "client_id": "466847416418-bm95c2srkonkrjfmv65u56bo2lcu4rcd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMvjMX2uUetQ9dQFkb_4PaPRDyxEnt4Kg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466847416418-bm95c2srkonkrjfmv65u56bo2lcu4rcd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
