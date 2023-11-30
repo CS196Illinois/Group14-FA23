@@ -10,4 +10,26 @@
         <item>Rise and Dine</item>
         <item>Cafe a la Crumb</item>
     </string-array>
+    <string-array name="stationsAllen">
+        <item>LAR Dining Hall</item>
+        <item>Kosher Dining Hall</item>
+        <item>Field of Greens</item>
+    </string-array>
+    <string-array name="stationsIke">
+        <item>Baked Expectations</item>
+        <item>Dons Chophouse</item>
+        <item>Euclid Street Deli</item>
+        <item>Gregory Drive Diner</item>
+        <item>IKE Inclusive Solutions</item>
+        <item>Penne Lane</item>
+        <item>Prairie Fire</item>
+        <item>Soytainly</item>
+    </string-array>
+    <string-array name="stationsPar">
+        <item>Abbondante</item>
+        <item>Abbondante Grill</item>
+        <item>La Avenida</item>
+        <item>Provolone</item>
+        <item>Sky Garden</item>
+    </string-array>
 </resources>

@@ -6,7 +6,9 @@ public class Station {
     private double quality;
     private String description;
     private String user;
+    private String location;
     public Station(){
+        location = "";
         time = 0;
         name = "";
         quality = 0.0;
@@ -16,6 +18,10 @@ public class Station {
 
     public String getName() {
         return name;
+    }
+
+    public String getLocation() {
+        return location;
     }
 
     public String getUser() {
@@ -41,6 +47,10 @@ public class Station {
         this.name = name;
     }
 
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
     public void setQuality(double quality) {
         this.quality = quality;
     }
@@ -52,7 +62,7 @@ public class Station {
     }
     @Override
     public String toString() {
-        return "Name=" + name + " Time=" + time + " quality=" + quality + " description=" + description;
+        return "Location=" + location + "name=" + name + " Time=" + time + " quality=" + quality + " description=" + description;
     }
 }
 
