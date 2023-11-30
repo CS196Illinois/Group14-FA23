@@ -34,7 +34,7 @@ public class MainActivity3 extends AppCompatActivity {
     private int wait;
     private int averageTime;
     private EditText messageReview;
-    ListOfStations list;
+    ListOfStations list = new ListOfStations();
 
    // private ArrayList<Station> stationList = new ArrayList<>();
     private ArrayList<Integer> numList = new ArrayList<>();
@@ -72,47 +72,81 @@ public class MainActivity3 extends AppCompatActivity {
             }
         });
 
-
-
-
         submitButton = (Button) findViewById(R.id.submitButton);
         submitButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View V) {
                 Station stationCopy = new Station();
-                stationCopy = MainActivity2.entry;
-                loadData();
-                if (stationCopy.getName().equals("Sapporito")) {
-                    list = MainActivity0.sapporito;
-                } else if (stationCopy.getName().equals("Grillworks")) {
-                    list = MainActivity0.grillworks;
-                } else if (stationCopy.getName().equals("Latitude")) {
-                    list = MainActivity0.latitude;
-                } else if (stationCopy.getName().equals("Inclusive Solutions Kitchen")) {
-                    list = MainActivity0.solutionsKitchen;
-                } else if (stationCopy.getName().equals("Grains and Greens")) {
-                    list = MainActivity0.grainsGreens;
-                } else if (stationCopy.getName().equals("Rise and Dine")) {
-                    list = MainActivity0.riseDine;
-                } else if (stationCopy.getName().equals("Cafe a la Crumb")) {
-                    list = MainActivity0.cafeCrumb;
+                if (stationCopy.getLocation().equals("ISR")) {
+                    stationCopy = MainActivity2.entry;
+                    loadData();
+                    stationCopy.setTime(wait);
+                    stationCopy.setLocation(MainActivity0.locationChosen);
+                    stationCopy.setQuality(stationRating.getRating());
+                    stationCopy.setDescription(String.valueOf(messageReview.getText()));
+                    // entry.setDescription();
+                    list.add(stationCopy);
+                    numList.add(1);
+                    averageTime = list.calculateAvgTime();
+                    double averageRating = list.calculateAvgRating();
+                    openActivity4();
+                    count++;
+                    System.out.println(list.getStationList());
+                    System.out.println(averageTime);
+                    System.out.println(averageRating);
+                    System.out.println(list.getReviewMessages());
+                    saveData();
+                } else if (stationCopy.getLocation().equals("Ike")) {
+                    stationCopy = MainActivity2ike.entry;
+                    loadData();
+                    stationCopy.setTime(wait);
+                    stationCopy.setLocation(MainActivity0.locationChosen);
+                    stationCopy.setQuality(stationRating.getRating());
+                    stationCopy.setDescription(String.valueOf(messageReview.getText()));
+                    // entry.setDescription();
+                    numList.add(1);
+                    openActivity4();
+                    count++;
+                    System.out.println(list.getStationList());
+                    System.out.println(averageTime);
+                    saveData();
+                } else if (stationCopy.getLocation().equals("Allen")) {
+                    stationCopy = MainActivity2allen.entry;
+                    loadData();
+                    stationCopy.setTime(wait);
+                    stationCopy.setLocation(MainActivity0.locationChosen);
+                    stationCopy.setQuality(stationRating.getRating());
+                    stationCopy.setDescription(String.valueOf(messageReview.getText()));
+                    // entry.setDescription();
+                    list.add(stationCopy);
+                    numList.add(1);
+                    averageTime = list.calculateAvgTime();
+                    double averageRating = list.calculateAvgRating();
+                    openActivity4();
+                    count++;
+                    System.out.println(list.getStationList());
+                    System.out.println(averageTime);
+                    System.out.println(averageRating);
+                    System.out.println(list.getReviewMessages());
+                    saveData();
                 } else {
-                    list = MainActivity0.fusion48;
+                    stationCopy = MainActivity2par.entry;
+                    loadData();
+                    stationCopy.setTime(wait);
+                    stationCopy.setLocation(MainActivity0.locationChosen);
+                    stationCopy.setQuality(stationRating.getRating());
+                    stationCopy.setDescription(String.valueOf(messageReview.getText()));
+                    // entry.setDescription();
+                    list.add(stationCopy);
+                    numList.add(1);
+                    averageTime = list.calculateAvgTime();
+                    double averageRating = list.calculateAvgRating();
+                    openActivity4();
+                    count++;
+                    System.out.println(stationCopy);
+                    saveData();
                 }
-                stationCopy.setTime(wait);
-                stationCopy.setQuality(stationRating.getRating());
-                stationCopy.setDescription(String.valueOf(messageReview.getText()));
-                // entry.setDescription();
-                list.add(stationCopy);
-                numList.add(1);
-                averageTime = list.calculateAvgTime();
-                double averageRating = list.calculateAvgRating();
-                openActivity4();
-                count++;
-                System.out.println(list.getStationList());
-                System.out.println(averageTime);
-                System.out.println(averageRating);
-                System.out.println(list.getReviewMessages());
-                saveData();
+
+
             }
         });
     }

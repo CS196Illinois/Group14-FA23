@@ -17,6 +17,7 @@ public class MainActivity0 extends AppCompatActivity {
     static ListOfStations grainsGreens = new ListOfStations();
     static ListOfStations riseDine = new ListOfStations();
     static ListOfStations cafeCrumb = new ListOfStations();
+    static String locationChosen = "";
     /* public static ListOfStations getList() {
         return list;
     }  */

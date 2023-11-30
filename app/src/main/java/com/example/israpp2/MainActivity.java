@@ -25,17 +25,17 @@ public class MainActivity extends AppCompatActivity {
         buttonISR = (Button) findViewById(R.id.buttonISR);
         buttonIke.setOnClickListener(new View.OnClickListener() {
             public void onClick(View V) {
-                openActivity2();
+                openActivity2ike();
             }
         });
         buttonPar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View V) {
-                openActivity2();
+                openActivity2par();
             }
         });
         buttonAllen.setOnClickListener(new View.OnClickListener() {
             public void onClick(View V) {
-                openActivity2();
+                openActivity2allen();
             }
         });
         buttonISR.setOnClickListener(new View.OnClickListener() {
@@ -46,6 +46,18 @@ public class MainActivity extends AppCompatActivity {
     }
         public void openActivity2() {
             Intent intent = new Intent(this, MainActivity2.class);
+            startActivity(intent);
+        }
+        public void openActivity2par() {
+            Intent intent = new Intent(this, MainActivity2par.class);
+            startActivity(intent);
+        }
+        public void openActivity2ike() {
+            Intent intent = new Intent(this, MainActivity2ike.class);
+            startActivity(intent);
+        }
+        public void openActivity2allen() {
+            Intent intent = new Intent(this, MainActivity2allen.class);
             startActivity(intent);
         }
 }

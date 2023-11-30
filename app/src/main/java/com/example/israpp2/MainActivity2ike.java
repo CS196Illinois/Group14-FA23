@@ -1,7 +1,5 @@
 package com.example.israpp2;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,8 +10,10 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity2 extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+
+public class MainActivity2ike extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private Button checkIn;
     private String text;
     private Spinner spinner;
@@ -23,10 +23,10 @@ public class MainActivity2 extends AppCompatActivity implements AdapterView.OnIt
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        MainActivity0.locationChosen = "ISR";
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_main2ike);
+        MainActivity0.locationChosen = "Ike";
         spinner = (Spinner) findViewById(R.id.spinner); //anything with "spinner refers to the dropdown stations
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.stations, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.stationsIke, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);

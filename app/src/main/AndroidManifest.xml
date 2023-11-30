@@ -25,6 +25,15 @@
             android:name=".MainActivity2"
             android:exported="false" />
         <activity
+            android:name=".MainActivity2par"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2ike"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2allen"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
