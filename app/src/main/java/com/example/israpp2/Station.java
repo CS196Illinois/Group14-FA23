@@ -62,7 +62,7 @@ public class Station {
     }
     @Override
     public String toString() {
-        return "Location=" + location + "name=" + name + " Time=" + time + " quality=" + quality + " description=" + description;
+        return "Location=" + location + " Name=" + name + " Time=" + time + " quality=" + quality + " description=" + description;
     }
 }
 

@@ -76,11 +76,11 @@ public class MainActivity3 extends AppCompatActivity {
         submitButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View V) {
                 Station stationCopy = new Station();
-                stationCopy.setLocation(MainActivity0.locationChosen);
                 if (stationCopy.getLocation().equals("ISR")) {
                     stationCopy = MainActivity2.entry;
                     loadData();
                     stationCopy.setTime(wait);
+                    stationCopy.setLocation(MainActivity0.locationChosen);
                     stationCopy.setQuality(stationRating.getRating());
                     stationCopy.setDescription(String.valueOf(messageReview.getText()));
                     // entry.setDescription();
@@ -99,6 +99,7 @@ public class MainActivity3 extends AppCompatActivity {
                     stationCopy = MainActivity2ike.entry;
                     loadData();
                     stationCopy.setTime(wait);
+                    stationCopy.setLocation(MainActivity0.locationChosen);
                     stationCopy.setQuality(stationRating.getRating());
                     stationCopy.setDescription(String.valueOf(messageReview.getText()));
                     // entry.setDescription();
@@ -112,6 +113,7 @@ public class MainActivity3 extends AppCompatActivity {
                     stationCopy = MainActivity2allen.entry;
                     loadData();
                     stationCopy.setTime(wait);
+                    stationCopy.setLocation(MainActivity0.locationChosen);
                     stationCopy.setQuality(stationRating.getRating());
                     stationCopy.setDescription(String.valueOf(messageReview.getText()));
                     // entry.setDescription();
@@ -130,6 +132,7 @@ public class MainActivity3 extends AppCompatActivity {
                     stationCopy = MainActivity2par.entry;
                     loadData();
                     stationCopy.setTime(wait);
+                    stationCopy.setLocation(MainActivity0.locationChosen);
                     stationCopy.setQuality(stationRating.getRating());
                     stationCopy.setDescription(String.valueOf(messageReview.getText()));
                     // entry.setDescription();
@@ -139,10 +142,7 @@ public class MainActivity3 extends AppCompatActivity {
                     double averageRating = list.calculateAvgRating();
                     openActivity4();
                     count++;
-                    System.out.println(list.getStationList());
-                    System.out.println(averageTime);
-                    System.out.println(averageRating);
-                    System.out.println(list.getReviewMessages());
+                    System.out.println(stationCopy);
                     saveData();
                 }
 
