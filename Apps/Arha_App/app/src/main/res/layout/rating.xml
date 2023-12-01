@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="435dp"
+        android:text="Is there anything else that you would like to mention?"
+        android:textSize="@dimen/_18sdp" />
+
+    <RatingBar
+        android:id="@+id/stationRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_260sdp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_200sdp"
+        android:text="How would you rate the quality of food?"
+        android:textSize="@dimen/_18sdp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:text="How long would you say the wait time was?"
+        android:textSize="@dimen/_18sdp" />
+
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="168dp"
+        android:layout_height="86dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_500sdp"
+        android:text="Submit"
+        android:textSize="@dimen/_20sdp"/>
+
+    <SeekBar
+        android:id="@+id/waitBar"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_110sdp" />
+
+    <TextView
+        android:id="@+id/waitTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_135sdp"
+        android:text="0 Minutes"
+        android:textSize="@dimen/_14sdp" />
+
+    <EditText
+        android:id="@+id/messageReview"
+        android:layout_width="317dp"
+        android:layout_height="96dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_375sdp"
+        android:ems="10"
+        android:gravity="start|bottom"
+        android:inputType="textMultiLine" />
+
+</RelativeLayout>
