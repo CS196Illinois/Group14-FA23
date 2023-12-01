@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "527044928820",
+    "project_id": "cs124-h---project",
+    "storage_bucket": "cs124-h---project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:527044928820:android:1be82f28fc889e3723f161",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN-TNxPzLVnw89CZwbS_tCYu3znvjT538"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:527044928820:android:78c76f29e699823023f161",
+        "android_client_info": {
+          "package_name": "com.example.cs124h_dining_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN-TNxPzLVnw89CZwbS_tCYu3znvjT538"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

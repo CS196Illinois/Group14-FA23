@@ -9,12 +9,15 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.cs124h_dining_app.R;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeActivity extends AppCompatActivity {
     private Button buttonISR;
     private Button buttonAllen;
     private Button buttonPar;
     private Button buttonIke;
+
+    private FirebaseAuth auth;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +48,14 @@ public class HomeActivity extends AppCompatActivity {
                 openDining("3");
             }
         });
+
+        findViewById(R.id.buttonLogout).setOnClickListener(v -> {
+            FirebaseAuth.getInstance().signOut();
+            Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+            startActivity(intent);
+        });
+
+        startActivity(new Intent(getApplicationContext(), LoginActivity.class));
     }
     public void openDining(String  id) {
         Intent intent = new Intent(this, DiningActivity.class);

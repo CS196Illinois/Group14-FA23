@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("org.jetbrains.kotlin.plugin.serialization") version "1.4.10"
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -54,4 +55,6 @@ dependencies {
 
     implementation("com.intuit.sdp:sdp-android:1.0.6")
     implementation("com.intuit.ssp:ssp-android:1.0.6")
+
+    implementation("com.google.firebase:firebase-auth:22.2.0")
 }
