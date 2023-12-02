@@ -31,6 +31,7 @@ public class LoginActivity extends AppCompatActivity {
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if(currentUser != null){
             appState.setUser(currentUser);
+            setResult(RESULT_OK);
             finish();
         }
     }
@@ -77,6 +78,7 @@ public class LoginActivity extends AppCompatActivity {
                             // Sign in success, update UI with the signed-in user's information
                             Toast.makeText(getApplicationContext(), "Login Successful", Toast.LENGTH_SHORT).show();
                             appState.setUser(mAuth.getCurrentUser());
+                            setResult(RESULT_OK);
                             finish();
 
                         } else {

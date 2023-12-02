@@ -1,5 +1,9 @@
 package com.example.cs124h_dining_app.activities;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -7,8 +11,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.cs124h_dining_app.R;
+import com.example.cs124h_dining_app.Time2Eat;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeActivity extends AppCompatActivity {
@@ -16,14 +22,28 @@ public class HomeActivity extends AppCompatActivity {
     private Button buttonAllen;
     private Button buttonPar;
     private Button buttonIke;
+    private TextView username;
+    private Time2Eat appState;
 
-    private FirebaseAuth auth;
+    private ActivityResultLauncher<Intent> loginLaunch = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),
+            new ActivityResultCallback<ActivityResult>() {
+                @Override
+                public void onActivityResult(ActivityResult o) {
+                    if (o.getResultCode() == AppCompatActivity.RESULT_OK) {
+                        username.setText(appState.getUser().getEmail());
+                    }
+                }
+            }
+    );
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home);
 
+        appState = (Time2Eat) this.getApplication();
+        username = (TextView) findViewById(R.id.username);
         buttonAllen = (Button) findViewById(R.id.buttonAllen);
         buttonPar = (Button) findViewById(R.id.buttonPar);
         buttonIke = (Button) findViewById(R.id.buttonIke);
@@ -52,10 +72,10 @@ public class HomeActivity extends AppCompatActivity {
         findViewById(R.id.buttonLogout).setOnClickListener(v -> {
             FirebaseAuth.getInstance().signOut();
             Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
-            startActivity(intent);
+            loginLaunch.launch(intent);
         });
 
-        startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+        loginLaunch.launch(new Intent(getApplicationContext(), LoginActivity.class));
     }
     public void openDining(String  id) {
         Intent intent = new Intent(this, DiningActivity.class);

@@ -29,9 +29,6 @@
             android:name=".activities.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.MainActivity"
-            android:exported="false" />
-        <activity
             android:name=".activities.DiningActivity"
             android:exported="false" />
         <activity

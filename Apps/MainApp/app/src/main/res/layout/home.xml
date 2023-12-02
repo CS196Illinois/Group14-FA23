@@ -4,17 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activities.HomeActivity">
 
-    <Button
-        android:id="@+id/buttonLogout"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="39dp"
-        android:text="@string/logout" />
+        android:orientation="horizontal"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp" >
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:textSize="19.50dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:text="@string/logout" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/welcome"
@@ -78,4 +95,5 @@
         android:layout_marginTop="@dimen/_100sdp"
         android:layout_marginStart="@dimen/_75sdp"
         app:srcCompat="@drawable/illinois_block_i" />
+
 </RelativeLayout>
