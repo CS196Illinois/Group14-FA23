@@ -37,11 +37,10 @@
         android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/_60sdp"
         android:textSize="@dimen/_18sdp"
-        android:text="Login to your Illinois account" />
+        android:text="Welcome to UIUC Dining" />
 
     <TextView
         android:id="@+id/chooseGuest"
@@ -49,8 +48,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_30sdp"
         android:layout_marginTop="@dimen/_350sdp"
-        android:textSize="@dimen/_15sdp"
-        android:text="Or Choose a Dining Hall as a Guest!" />
+        android:text="Choose a Dining Hall!"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/_15sdp" />
 
     <Button
         android:id="@+id/buttonISR"
@@ -58,7 +58,7 @@
         android:layout_height="@dimen/_50sdp"
         android:layout_marginStart="@dimen/_50sdp"
         android:layout_marginTop="@dimen/_420sdp"
-        android:textSize="@dimen/_12sdp"
+        android:textSize="30dp"
         android:text="ISR" />
 
     <Button
@@ -67,7 +67,7 @@
         android:layout_height="@dimen/_50sdp"
         android:layout_marginStart="@dimen/_160sdp"
         android:layout_marginTop="@dimen/_420sdp"
-        android:textSize="@dimen/_12sdp"
+        android:textSize="30dp"
         android:text="Allen" />
 
     <Button
@@ -76,7 +76,7 @@
         android:layout_height="@dimen/_50sdp"
         android:layout_marginStart="@dimen/_160sdp"
         android:layout_marginTop="@dimen/_500sdp"
-        android:textSize="@dimen/_12sdp"
+        android:textSize="30dp"
         android:text="PAR" />
 
     <Button
@@ -85,8 +85,8 @@
         android:layout_height="@dimen/_50sdp"
         android:layout_marginStart="@dimen/_50sdp"
         android:layout_marginTop="@dimen/_500sdp"
-        android:textSize="@dimen/_12sdp"
-        android:text="Ike" />
+        android:textSize="30dp"
+        android:text="IKE" />
 
     <ImageView
         android:id="@+id/ILogin"
