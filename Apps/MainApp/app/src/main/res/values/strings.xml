@@ -7,4 +7,5 @@
     <string name="click_to_login">Click to login</string>
     <string name="click_to_register">Click to register</string>
     <string name="logout">Logout</string>
+    <string name="default_web_client_id">"466847416418-8k44bflt93p1t8enavivm60otv864149.apps.googleusercontent.com"</string>
 </resources>
